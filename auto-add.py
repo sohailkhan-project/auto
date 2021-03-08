@@ -13,9 +13,9 @@ import random
 import re
 
 
-api_id = 12345    #Your Api ID
-api_hash = 'XXXXXXXXXXXXXXX'    #Your Api Hash
-phone = '+11234567890'      # Your Phone Number With Country Code.
+api_id = 3793864    #Your Api ID
+api_hash = '3c8713a1cf5904f60960ecff27b1faa8'    #Your Api Hash
+phone = '+917257816448'      # Your Phone Number With Country Code.
 client = TelegramClient(phone, api_id, api_hash)
 
 client.connect()
@@ -93,8 +93,8 @@ def add_users_to_group():
             else:
                 sys.exit("Invalid Mode Selected. Please Try Again.")
             client(InviteToChannelRequest(target_group_entity,[user_to_add]))
-            print("Waiting 60 Seconds...")
-            time.sleep(60)
+            print("Waiting 3 Seconds...")
+            time.sleep(3)
         except PeerFloodError:
             print("Getting Flood Error from Telegram. You should stop script now.Please try again after some time.")
         except UserPrivacyRestrictedError:
